@@ -1,0 +1,25 @@
+# local Neo4j for the knowledge graph.
+# docker compose up -d
+# browser UI: http://localhost:7474  (user: neo4j / pass: password)
+# bolt endpoint: bolt://localhost:7687
+services:
+  neo4j:
+    image: neo4j:5.22-community
+    container_name: graphrag-neo4j
+    ports:
+      - "7474:7474"   # http browser
+      - "7687:7687"   # bolt
+    environment:
+      NEO4J_AUTH: neo4j/password
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_security_procedures_unrestricted: apoc.*
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  neo4j_data:
