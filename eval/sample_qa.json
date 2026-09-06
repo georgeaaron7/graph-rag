@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What xenon propulsion platform was developed by the firm that acquired Dr. Elena Vance's atmospheric research initiative?",
+    "gold_chunk_ids": [
+      "aerospace_acquisitions.txt::p1::c0",
+      "orbital_propulsion.txt::p1::c0"
+    ]
+  },
+  {
+    "question": "Which firm acquired Project Starlight, and what deep-space satellite thruster did that firm go on to create?",
+    "gold_chunk_ids": [
+      "aerospace_acquisitions.txt::p1::c0",
+      "orbital_propulsion.txt::p1::c0"
+    ]
+  },
+  {
+    "question": "Where was the cleanroom facility built for the semiconductor startup where the lead engineer of the Aether-9 thruster previously worked?",
+    "gold_chunk_ids": [
+      "orbital_propulsion.txt::p1::c0",
+      "semiconductor_ventures.txt::p1::c0"
+    ]
+  },
+  {
+    "question": "Which venture capital firm funded the gallium-nitride manufacturer advised by Marcus Thorne before he conducted Madrid vacuum tests?",
+    "gold_chunk_ids": [
+      "orbital_propulsion.txt::p1::c0",
+      "semiconductor_ventures.txt::p1::c0"
+    ]
+  },
+  {
+    "question": "Name the city where plasma confinement testing took place for the ion thruster built by the company that bought Dr. Elena Vance's initiative.",
+    "gold_chunk_ids": [
+      "aerospace_acquisitions.txt::p1::c0",
+      "orbital_propulsion.txt::p1::c0"
+    ]
+  }
+]
