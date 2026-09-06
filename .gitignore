@@ -13,6 +13,9 @@ data/index/
 *.faiss
 data/*.pdf
 
+store.json
+test_multihop/
+
 # Node / Next.js
 node_modules/
 .next/
